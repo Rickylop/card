@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../images/background.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 200px auto 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.container .card {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,.5);
+}
+
+.card-text h2 {
+ margin-bottom: 0;
+}
+
+.card-text p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.card-img img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.container .card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .card .face.face1 {
+  box-sizing: border-box;
+}
+
+.container .card .face.face2-picasso {
+  background: url(../images/picasso-paint.jpg);
+  background-size: 350px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face2-picasso {
+  height: 60px;
+}
+
+.container .card .face.face2-picasso:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.container .card .face.face2-picasso h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: white;
+  transition: 0.5s;
+  text-shadow:  black 10px 0px 10px;
+} 
+
+.container .card .face.face2-monet {
+  background: url(../images/monet-paint.jpg);
+  background-size: 350px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face2-monet {
+  height: 60px;
+}
+
+.container .card .face.face2-monet:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.container .card .face.face2-monet h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: white;
+  transition: 0.5s;
+  text-shadow:  black 10px 0px 10px;
+} 
+
+.container .card .face.face2-dali {
+  background: url(../images/dali-paint.jpg);
+  background-size: 350px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face2-dali {
+  height: 60px;
+}
+
+.container .card .face.face2-dali:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.container .card .face.face2-dali h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  color: white;
+  transition: 0.5s;
+  text-shadow: black 10px 0px 10px;
+} 
+
+.container .card .face.face2-dali h2>mark {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+}
